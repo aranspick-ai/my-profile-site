@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홍길동 | 프론트엔드 개발자</title>
+  <meta name="description" content="프론트엔드 개발자 홍길동의 웹 이력서입니다.">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t && window.matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#profile" class="logo">홍길동</a>
+      <nav id="nav" class="nav" aria-label="주 메뉴">
+        <ul>
+          <li><a href="#about">소개</a></li>
+          <li><a href="#skills">기술</a></li>
+          <li><a href="#projects">프로젝트</a></li>
+          <li><a href="#experience">경력</a></li>
+          <li><a href="#education">학력</a></li>
+          <li><a href="#contact">연락처</a></li>
+          <li><a href="#sns">SNS</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-pressed="false" aria-label="다크 모드 전환">◐</button>
+        <button id="menu-toggle" class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="메뉴 열기">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="profile" class="hero">
+      <div class="container hero-inner reveal">
+        <img src="assets/profile.svg" alt="홍길동 프로필 사진" class="avatar" width="160" height="160">
+        <div>
+          <h1>홍길동</h1>
+          <p class="role">프론트엔드 개발자</p>
+          <p class="tagline">사용자 경험을 코드로 다듬는 개발자입니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container reveal">
+        <h2>소개</h2>
+        <p>안녕하세요, 웹 프론트엔드 개발자 홍길동입니다. 작고 단단한 UI를 만드는 일을 좋아합니다. 접근성과 성능을 함께 고려하며 개발합니다. 팀과 소통하며 문제를 단순하게 푸는 방법을 찾습니다. 새로운 기술을 꾸준히 배우고 기록합니다.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container reveal">
+        <h2>기술 스택</h2>
+        <ul class="chips">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li>
+          <li>React</li><li>Git</li><li>Figma</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container reveal">
+        <h2>프로젝트</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>할 일 관리 앱</h3>
+            <p class="meta">2024.01 – 2024.03</p>
+            <p>드래그 앤 드롭을 지원하는 할 일 관리 웹 앱.</p>
+            <p class="meta">JavaScript, CSS</p>
+            <a href="https://github.com/username/todo-app" target="_blank" rel="noopener noreferrer">링크 보기</a>
+          </article>
+          <article class="card">
+            <h3>날씨 대시보드</h3>
+            <p class="meta">2024.04 – 2024.05</p>
+            <p>공개 API를 활용한 지역별 날씨 시각화 대시보드.</p>
+            <p class="meta">React, REST API</p>
+            <a href="https://github.com/username/weather" target="_blank" rel="noopener noreferrer">링크 보기</a>
+          </article>
+          <article class="card">
+            <h3>개인 블로그</h3>
+            <p class="meta">2024.06 – 2024.08</p>
+            <p>마크다운 기반의 정적 블로그와 다크 모드 지원.</p>
+            <p class="meta">HTML, CSS, JavaScript</p>
+            <a href="https://github.com/username/blog" target="_blank" rel="noopener noreferrer">링크 보기</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="container reveal">
+        <h2>경력</h2>
+        <ul class="timeline">
+          <li>
+            <h3>(주)예시컴퍼니 · 프론트엔드 개발자</h3>
+            <p class="meta">2022.03 – 현재</p>
+            <p>웹 서비스 UI 개발 및 유지보수, 디자인 시스템 구축.</p>
+          </li>
+          <li>
+            <h3>(주)샘플랩 · 인턴</h3>
+            <p class="meta">2021.07 – 2021.12</p>
+            <p>사내 관리자 페이지 화면 개발 보조.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container reveal">
+        <h2>학력</h2>
+        <ul class="timeline">
+          <li>
+            <h3>예시대학교 · 컴퓨터공학과</h3>
+            <p class="meta">2017.03 – 2021.02</p>
+          </li>
+        </ul>
+        <h2 class="sub">자격증 / 교육</h2>
+        <ul class="timeline">
+          <li><h3>정보처리기사</h3><p class="meta">2021.06</p></li>
+          <li><h3>웹 개발 부트캠프 수료</h3><p class="meta">2021.09 – 2022.02</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container reveal">
+        <h2>연락처</h2>
+        <ul class="links">
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><a href="https://github.com/username" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://blog.example.com" target="_blank" rel="noopener noreferrer">블로그</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sns" class="section">
+      <div class="container reveal">
+        <h2>SNS</h2>
+        <ul class="sns-list">
+          <li>
+            <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" aria-label="GitHub (새 창에서 열기)">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtube.com/@username" target="_blank" rel="noopener noreferrer" aria-label="YouTube (새 창에서 열기)">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+              <span>YouTube</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" aria-label="Instagram (새 창에서 열기)">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              <span>Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 홍길동. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
